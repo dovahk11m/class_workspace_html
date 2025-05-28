@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table colspan & rowspan</title>
+
+    <!-- 내부 스타일 시트 -->
+    <style>
+      * {
+        text-align: center;
+      }
+      table {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #time {
+        background-color: coral;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2>시간표 예제</h2>
+    <table border="1">
+      <thead
+      style="background-color: black; color: yellowgreen; font-size: 20px;"
+      >
+        <th>시간</th>
+        <th>월요일</th>
+        <th>화요일</th>
+        <th>수요일</th>
+        <th>목요일</th>
+        <th>금요일</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="time">09:00 - 10:00</td>
+          <td colspan="5">1일1쿼리</td>
+        </tr>
+        <tr>
+          <td id="time">10:00 - 11:00</td>
+          <td rowspan="3">JS수업</td>
+          <td rowspan="3">프로젝트 작업</td>
+          <td rowspan="3">html수업</td>
+          <td rowspan="3">프로젝트 작업</td>
+          <td rowspan="3">mysql수업</td>
+        </tr>
+        <tr>
+          <td id="time">11:00 - 12:00</td>
+        </tr>
+        <tr>
+          <td id="time">12:00 - 13:00</td>
+        </tr>
+        <tr>
+          <td id="time">13:00 - 14:00</td>
+          <td colspan="5" style="font-size: 20px;">중식</td>
+        </tr>
+        <tr>
+          <td id="time">14:00 - 15:00</td>
+          <td rowspan="3">JS실습</td>
+          <td rowspan="3">프로젝트 작업</td>
+          <td rowspan="3">html실습</td>
+          <td rowspan="3">프로젝트 작업</td>
+          <td rowspan="3">mysql실습</td>
+        </tr>
+        <tr>
+          <td id="time">15:00 - 16:00</td>
+        </tr>
+        <tr>
+          <td id="time">16:00 - 17:00</td>
+        </tr>
+        <tr>
+          <td id="time">17:00 - 18:00</td>
+          <td colspan="5">블로그 정리</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
