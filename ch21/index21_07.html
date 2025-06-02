@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 800px;
+        background-color: darkslategray;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+        /* align-items
+        한 줄에 대한 교차축 정렬의 설정
+        align-contnet
+        wrap 속성이 발동했을 때 정렬의 설정*/
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        margin: 2px;
+        background-color: darkolivegreen;
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      html {
+        background-color: black;
+        color: darkseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>align-content 속성을 알아보자</h3>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박스 모델의 이해</title>
+    <!-- 내부 ss -->
+    <style>
+      * {
+        /* 초기화 */
+        padding: 0;
+        margin: 0;
+
+        /* 요소 크기를 계산하는 기준 방식엔 여러가지가 있다 */
+        /* 기본값: content-box */
+        /* border-box 로 수정하면 */
+        box-sizing: border-box;
+      }
+
+      .box {
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+      }
+      .box {
+        padding: 20px;
+      }
+      .box{
+        border: 5px solid darkgreen;
+      }
+      .box{
+        margin: 10px;
+      }
+      html {
+        background-color: rgb(0, 0, 30);
+        color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">div 태그 박스 모델</div>
+    <div>div태그2</div>
+    <div>
+      <pre>
+        요소 크기 계산해보기
+        box-sizing: border-box 기준
+        
+        이 기준은 width 속성의 값이 200px 이라면
+        콘텐츠 크기 + padding + border 크기를 포함해서 렌더링 된다
+        </pre>
+    </div>
+  </body>
+</html>

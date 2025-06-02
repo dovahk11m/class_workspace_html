@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* css 우선순위
+      1. !important: 가장 높은 우선순위
+      2. inline style: html tag 안에 직접 작성된 스타일 속성
+      3. id selector: #id
+      4. class selector:.class
+      5. tag selector: tag */
+      p {
+        color: yellow;
+      }
+      .highlight {
+        color: orange;
+      }
+      #special {
+        color: orangered;
+      }
+      p[style] {
+        color: red !important;
+      }
+
+      body {
+        background-color: black;
+        color: darkseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      부모 div 태그
+      <p id="special" class="highlight" style="color: brown">자식 p 태그</p>
+    </div>
+  </body>
+</html>

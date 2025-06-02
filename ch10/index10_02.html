@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* cotainer 자손 p태그 글자색을 파란색으로 */
+      .container p {
+        color: aqua;
+      }
+      /* container 자식 p태그 글자색을 굵게 */
+      .container > p {
+        font-weight: bold;
+      }
+      /* h2 인접 p태그 배경 노랗게 */
+      h2 + p {
+        color: black;
+        background-color: yellow;
+        width: 10vw;
+      }
+      /* h2 뒤에 p태그 폰트 크기 20px */
+      h2 ~ p {
+        font-size: 20px;
+      }
+
+      html {
+        background-color: rgb(0, 0, 30);
+        color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>컨테이너 제목</h3>
+      <p>컨테이너 문단</p>
+      <span>
+        <p>중첩된 문단</p>
+      </span>
+    </div>
+
+    <h2>주요 제목</h2>
+    <p>문단A</p>
+    <p>문단B</p>
+
+    <div>다른 박스</div>
+    <p>문단C</p>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- 내부ss -->
+    <style>
+      button:hover {
+        background-color: chocolate;
+      }
+      input:focus {
+        border: 2px solid chocolate;
+        color: orangered;
+        /* outline 속성을 제거해야
+        border 속성을 사용할 수 있다. */
+        outline: none;
+      }
+      /* 리스트의 첫 번째 항목을 선택해서
+      배경색을 초록으로 */
+      .item-list li:first-child {
+        background-color: darkgreen;
+        width: 20vw;
+      }
+      /* 리스트의 마지막 항목을 선택해서
+    배경색을 노란색으로 */
+      .item-list li:last-child {
+        background-color: navy;
+        width: 20vw;
+      }
+      /* 리스트 홀수 항목 폰트20 굵게 */
+      .item-list li:nth-child(odd) {
+            font-size: 24px;
+        font-weight: bold;
+      }
+
+      html {
+        background-color: rgb(0, 0, 30);
+        color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <button>버튼을 눌러보세요</button>
+    <input type="text" name="" id="" placeholder="여기에 값을 입력하시오" />
+    <ul class="item-list">
+      <li>항목1</li>
+      <li>항목2</li>
+      <li>항목3</li>
+      <li>항목4</li>
+      <li>항목5</li>
+    </ul>
+  </body>
+</html>

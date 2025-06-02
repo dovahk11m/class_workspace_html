@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+    background-color: rgb(0, 0, 30);
+}
+h1 {
+    color: white;
+}
+p {
+    color: yellow;
+}
+div {
+    color: greenyellow;
+}

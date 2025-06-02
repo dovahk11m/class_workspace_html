@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        border: 5px solid darkslategray;
+        padding: 10px;
+      }
+      .item {
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        border: 5px solid darkslategray;
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* 3.flwx-basis 속성
+      flex 요소의 기본크기를 설정한다 */
+      .item1 {
+        flex-basis: 300px;
+        flex-grow: 1;
+      }
+      .item2 {
+        flex-basis: 150px;
+      }
+
+      html {
+        background-color: black;
+        color: darkseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+    </div>
+  </body>
+</html>

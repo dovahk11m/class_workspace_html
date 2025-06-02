@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        /* flex container 설정 */
+        display: flex;
+        border: 2px solid darkolivegreen;
+      }
+      .item{
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        border: 2px solid darkolivegreen;
+        text-align: center;
+      }
+
+      html {
+        background-color: black;
+        color: darkseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- flex 레이아웃을 쓰기 위해서는 부모요소가 반드시 flex.. 이어야 한다 -->
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>

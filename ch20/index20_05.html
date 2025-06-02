@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+      }
+
+      /* flex item 개념을 사용하려면 
+      부모요소가 flex container 이어야 한다*/
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        width: 100vw;
+        height: 100vh;
+      }
+      .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-color: darkslategray;
+        width: 42vw;
+        height: 42vh;
+        border-radius: 10px;
+      }
+      .item-child {
+        background-color: darkolivegreen;
+        width: 21vw;
+        height: 21vh;
+
+        font-size: 21px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 21vh;
+        border-radius: 10px;
+      }
+
+      html {
+        background-color: black;
+        color: darkseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item child">
+        <div class="item-child">item-child</div>
+      </div>
+    </div>
+  </body>
+</html>

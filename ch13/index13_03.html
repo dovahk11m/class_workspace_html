@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>요소 최대 너비와 최대 높이 속성</title>
+    <!-- 내부ss -->
+    <style>
+      /* 컨텐츠 왼쪽, 컨텐츠 오른쪽 */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      .container{
+        width: 100%;
+        max-width: 500px;
+        background-color: darkgreen;
+        padding: 20px;
+        /* 위아래 좌우 */
+        margin: 20px auto;
+      }
+      .box{
+        /* 최대 높이 지정 */
+        max-height: 200px;
+        padding: 10px;
+        background-color: darkred;
+        /* 내용이 넘치면 자동 스크롤 */
+        overflow: scroll;
+      }
+
+      html {
+        background-color: rgb(0, 0, 30);
+        color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>max-width 예제</h1>
+      <p>이 컨테이너는 최대 너비 500px로 제한한다. 창 크기를 조절해보시오</p>
+    </div>
+
+    <div class="container">
+      <div class="box">
+        <h2>max_height 예제</h2>
+        <p>
+          이 박스는 최대 높이 200px입니다. 내용이 많아지만 자동으로 스크롤이
+          생깁니다
+        </p>
+        <p>더 많은 텍스트를 추가해서 확인해 봅시다</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia,
+        recusandae nam sint nihil ea quos neque itaque blanditiis quod ut
+        quisquam id dolorem numquam dolorum sapiente reprehenderit dignissimos
+        autem! Molestias nihil vitae similique, quas quae quis officiis aliquam,
+        obcaecati inventore quod ad rem laudantium? Velit ipsum, voluptas
+        impedit aliquid iusto, non natus ut facere dolorum, architecto commodi
+        similique. Voluptate.
+      </div>
+    </div>
+  </body>
+</html>

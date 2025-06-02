@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숨바꼭질 게임</title>
+     <style>
+    .card{
+        border: 2px solid #333;
+        padding: 10px;
+        margin: 5px;
+        background-color: purple;
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        text-align: center  ;
+    }
+    .hidden{
+        visibility: hidden;
+    }
+    .none{
+        display: none;
+    }
+
+
+    html {
+      background-color: rgb(0, 0, 30);
+      color: greenyellow;
+    }
+  </style>
+</head>
+<body>
+    <h2>숨바꼭질</h2>
+    <button onclick="toggleVisibility()">고양이 숨기기/보이기 visibility</button>
+    <button onclick="toggleDisplay()">강아지 숨기기/보이기 display</button>
+
+    <div class="card" id="dog">🐶강아지</div>
+    <div class="card" id="cat">🐱고양이</div>
+    
+
+    <script>
+        //자바 스크립트 문법을 작성할 수 있다
+        function toggleVisibility(){
+            var cat = document.getElementById('cat')
+            cat.classList.toggle('hidden');
+        }
+        function toggleDisplay(){
+            var dog = document.getElementById('dog')
+            dog.classList.toggle('none')
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(0, 0, 30);
+        color: greenyellow;
+        padding: 40;
+        font-family: "Courier New", Courier, monospace;
+        position: static;
+      }
+      .gallery {
+        width: 400px;
+        height: 300px;
+        border: 2px solid greenyellow;
+        position: absolute;
+        overflow: scroll;
+      }
+      .photo-card {
+        width: 150px;
+        height: 150px;
+        border: 2px solid greenyellow;
+        background-color: darkgreen;
+        text-align: center;
+        font-size: 18px;
+        position: absolute;
+      }
+      .card1 {
+        top: 20px;
+        left: 20px;
+        background-color: purple;
+        z-index: 4;
+      }
+      .card2 {
+        top: 50px;
+        left: 100px;
+        background-color: violet;
+        z-index: 3;
+      }
+      .card3 {
+        top: 80px;
+        left: 180px;
+        background-color: darkmagenta;
+      z-index: 2;
+      }
+      .card4 {
+        top: 1px;
+        left: 1px;
+        background-color: plum;
+      z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>나만의 포토갤러리</h2>
+    <div class="gallery">
+      <div class="photo-card card1">사진1</div>
+      <div class="photo-card card2">사진2</div>
+      <div class="photo-card card3">사진3</div>
+      <div class="photo-card card4">사진4</div>
+    </div>
+  </body>
+</html>

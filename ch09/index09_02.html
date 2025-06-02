@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      html {
+        background-color: rgb(0, 0, 30);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        /* 전체 초기화 */
+      }
+      hi {
+        font-size: 24px;
+      }
+      .content {
+        color: yellowgreen;
+      }
+      #special-box {
+        color: rgb(0, 0, 30);
+        background-color: yellow;
+        border: 2px solid skyblue;
+        width: 40vw;
+      }
+    </style>
+
+    <!-- css
+     인라인, 내부ss, 외부ss
+    외부ss 경로는 상대경로로 지정하는 것이 권장된다 -->
+    <link rel="stylesheet" href="css/style01.css" />
+  </head>
+  <body>
+    <h1 class="title">제목</h1>
+    <p class="content">내용1</p>
+    <p class="content">내용2</p>
+    <div id="special-box">특별한 박스</div>
+  </body>
+</html>

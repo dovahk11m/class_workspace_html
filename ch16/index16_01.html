@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹 폰트 사용법</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sunflower:wght@300&family=WDXL+Lubrifont+TC&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .gaegu {
+        font-family: "Gaegu", sans-serif;
+        font-weight: 400px;
+        font-size: 24px;
+      }
+      .roboto {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 28px;
+      }
+      .sunflower {
+        font-family: "Sunflower", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+      }
+
+      html {
+        background-color: rgb(0, 0, 30);
+        color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>나는 기본 폰트야</h1>
+    <!-- 모든 브라우저는 자체 기본 폰트 스택을 보유했다 -->
+    <h1 class="gaegu">안녕 나는 gaegu 폰트야</h1>
+    <h2 class="roboto">안녕 나는 roboto 폰트야</h2>
+    <p class="sunflower">안녕 나는 sunflower 폰트야</p>
+  </body>
+</html>
