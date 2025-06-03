@@ -1,0 +1,87 @@
+/* 6.3 */
+* {
+    box-sizing: border-box;
+}
+
+/* a 하이퍼링크 태그 스타일 초기화 */
+a {
+    /* 모든 요소 초기화 */
+    all: unset;
+}
+
+a:link {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+a:active {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+.inner{
+    /* 가로 사이즈가 1200px 넘는 해상도에서
+    미디어쿼리 max-width 설정할 것 */
+    width: 100%;
+    /* align-items 등으로 수직 가운데 정렬을 위해
+    미리 height 크기를 설정한다 */
+    height: 100%;
+    /* 가운데 정렬 */
+    margin: 0 auto;
+    /* 좌우 패딩 값을 주어 좌우에 딱 붙지 않도록 설정 */
+    padding: 0 2rem;
+    /* 넘치는 영역에 대해서 표시가 안되도록 설정 */
+    overflow: hidden;
+}
+
+header{
+width: 100%;
+height: 60px;
+background-color: #fff;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1000;
+}
+
+.head--container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 자손선택자(공백 중요)
+head-containder 내 모든 자손요소들 중
+.head--brand 클래스인 요소들만 선택 */
+.head--container .head--brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.head--container .head--brand a:hover{
+    cursor: pointer;
+    color: #2186c3;
+}
+
+
+
+
+
+
+
+
+body{
+    background-color: darkseagreen;
+}

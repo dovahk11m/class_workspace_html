@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="텐코쇼핑" />
+    <meta name="description" content="온라인 강의 리스트" />
+    <meta name="keywords" content="Lecture" />
+    <meta name="author" content="Dev Kim" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <!-- 일반적인 fabicon 설정 -->
+    <!-- 1.  rel 속성 : <link> 태그에서 사용되며, 현재 문서와 연결된 리소스 간의 관계를 정의합니다. -->
+    <!-- 2.  xx.ico : 파비콘으로 주로 사용되는 이미지 파일 형식. -->
+    <link rel="icon" href="img/tencoding.fabicon.png" />
+
+    <!-- 아이폰용 fabicon 설정 -->
+    <link rel="apple-touch-icon" href="img/tencoding.fabicon.png" />
+    <!-- 인터넷 익스플로러용 fabicon 설정-->
+    <link rel="short icon" type="image/x-icon" href="img/fun-coding.ico" />
+
+    <!-- CSS Reset(1), style.css, 아이콘 폰트, 웹페이지 사용 폰트 -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- 폰트는 각 사용자 PC에 해당 폰트가 설치 되어 있어야 함 -->
+    <!-- 웹 폰트는 각 사용자의 PC에 폰트가 없어도 웹 브라우저에서 폰트를 
+     다운로드 받아서 웹 페이지가 표시 됨 -->
+    <!-- 첫 번째와 두 번째 <link> 태그: rel="preconnect"는 브라우저가 fonts.googleapis.com와 fonts.gstatic.com 
+     도메인에 미리 연결을 준비하도록 하여 폰트 로딩 속도를 최적화합니다. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;0,700;0,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 레이아웃 틀 -->
+
+    <!-- 항상 화면을 100% 로 사용하면, 와이드 스크린에서 웹페이지가 기대와 달리 보일 수 있음 -->
+    <!-- header 에 상단 메뉴까지 넣을 예정 -->
+
+    <!-- 전체 layout 는 시멘틱 태그로 구성하고,
+      각 layout component 는 width를 100% 로 하되,
+      해당 component 에 들어가는 요소들은 특정 가로 사이즈 이상에서는 특정 사이즈로 가운데에 정렬되도록,
+      inner 클래스로 감싸주기로 함
+      각 하부 요소 배치를 위해서는 각 layout 별 container 로 정의해주기로 함
+    -->
+
+    <title>텐코딩 온라인 강의</title>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <!-- 내가 만든 css 네이밍은 하이픈 두개를 사용한다
+         탬플릿과 충돌을 피하기 위해서다 -->
+        <div class="head--container">
+          <div class="head--brand">
+            <a href="https://naver.com">텐코딩</a>
+          </div>
+          <div class="head--brand">
+            <a href="https://naver.com">텐코딩 블로그</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
