@@ -11,25 +11,25 @@ a {
 
 a:link {
     text-decoration: none;
-    color: #3f464d;
+    color: dimgray;
 }
 
 a:visited {
     text-decoration: none;
-    color: #3f464d;
+    color: dimgray;
 }
 
 a:active {
     text-decoration: none;
-    color: #3f464d;
+    color: dimgray;
 }
 
 a:hover {
     text-decoration: none;
-    color: #3f464d;
+    color: dimgray;
 }
 
-.inner{
+.inner {
     /* 가로 사이즈가 1200px 넘는 해상도에서
     미디어쿼리 max-width 설정할 것 */
     width: 100%;
@@ -44,17 +44,17 @@ a:hover {
     overflow: hidden;
 }
 
-header{
-width: 100%;
-height: 60px;
-background-color: #fff;
-position: fixed;
-top: 0;
-left: 0;
-z-index: 1000;
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-.head--container{
+.head--container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -70,9 +70,203 @@ head-containder 내 모든 자손요소들 중
     font-size: 1.2rem;
 }
 
-.head--container .head--brand a:hover{
+.head--container .head--brand a:hover {
     cursor: pointer;
-    color: #2186c3;
+    color: salmon;
+}
+
+section {
+    width: 100%;
+    background-color: #fff;
+}
+
+.main {
+    height: 360px;
+    background-image: url(https://cdn.pixabay.com/photo/2019/04/26/07/14/store-4156934_1280.png);
+    background-repeat: no-repeat;
+    /* x축 y축 */
+    background-position: center 20%;
+    background-size: cover;
+    z-index: 1;
+}
+
+.main--container {
+    width: 100%;
+    height: 100%;
+    background-color: royalblue;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.title--container {
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.message {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #fff;
+    line-height: 2rem;
+}
+
+.skill--container {
+    width: 100%;
+    height: 100%;
+    margin: 1rem;
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-wrap: wrap;
+    /* 상하 좌우 */
+    padding: 1rem, 0;
+    /* 다음줄로 넘어가면 여백 */
+    gap: 30px;
+}
+
+.skill {
+    width: 22%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    /* x축 y축 blur-radius 색상 */
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.5);
+    min-width: 200px;
+
+    transition: 0.2s;
+}
+
+.skill:hover {
+    transform: translate(0, -3px);
+}
+
+.skill--icon {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: royalblue;
+}
+
+.skill--title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.skill--name {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+    color: dimgray;
+}
+
+.skill--usage {
+    font-size: 0.8rem;
+    color: dimgray;
+}
+
+.roadmap--container {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.roadmap--title--container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.roadmap--title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: dimgray;
+}
+
+.slide--prev {
+    font-size: 2rem;
+    font-size: 2rem;
+    color: lightgray;
+}
+
+.slide--next {
+    font-size: 2rem;
+    font-size: 2rem;
+    color: lightgray;
+}
+
+/* ul 태그 초기화 */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0;
+}
+
+/* 직접 해보기 */
+
+.class--list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.class--card {
+
+    border-radius: 10px;
+    margin: 10px 10px;
+    overflow: hidden;
+    flex-shrink:0;
+
+    border: 0px solid black;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+
+}
+
+.class--skill {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 1rem;
+}
+
+.class--type {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: dimgray;
+}
+
+.class--format {
+    font-size: 1rem;
+
+    color: white;
+    background-color: royalblue;
+}
+
+.class--desc {
+    margin: 1rem 1rem;
+    color: dimgray;
+}
+
+
+
+
+
+/* 미디어쿼리 사용 */
+@media (min-width: 1200px) {
+
+    /* 화면의 크기가 1200px보다 크면 */
+    .inner {
+        max-width: 1200px;
+    }
 }
 
 
@@ -80,8 +274,6 @@ head-containder 내 모든 자손요소들 중
 
 
 
-
-
-body{
+body {
     background-color: darkseagreen;
 }
