@@ -121,7 +121,6 @@ section {
     height: 100%;
     margin: 1rem;
 
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -144,7 +143,6 @@ section {
     /* x축 y축 blur-radius 색상 */
     box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.5);
     min-width: 200px;
-
     transition: 0.2s;
 }
 
@@ -212,7 +210,6 @@ ul {
 }
 
 /* 직접 해보기 */
-
 .class--list {
     display: flex;
     flex-wrap: nowrap;
@@ -220,21 +217,17 @@ ul {
 }
 
 .class--card {
-
     border-radius: 10px;
     margin: 10px 10px;
     overflow: hidden;
-    flex-shrink:0;
-
+    flex-shrink: 0;
     border: 0px solid black;
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
-
 }
 
 .class--skill {
     display: flex;
     justify-content: space-between;
-
     margin: 1rem;
 }
 
@@ -246,7 +239,6 @@ ul {
 
 .class--format {
     font-size: 1rem;
-
     color: white;
     background-color: royalblue;
 }
@@ -256,9 +248,34 @@ ul {
     color: dimgray;
 }
 
+footer {
+    width: 100%;
+    height: 100%;
 
+    margin-top: 2rem;
+    padding: 1rem;
 
+    background-color: lightgray;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
 
+.footer--message {
+    margin: 10px;
+    color: dimgray;
+    font-weight: bold;
+}
+
+.footer--contact {
+    color: dimgray;
+    margin: 10px;
+}
+
+.footer--copyright {
+    color: dimgray;
+    margin: 10px;
+}
 
 /* 미디어쿼리 사용 */
 @media (min-width: 1200px) {
@@ -269,11 +286,10 @@ ul {
     }
 }
 
+@media (max-width: 980px) {
 
-
-
-
-
-body {
-    background-color: darkseagreen;
+    /* 화면의 크기가 980px보다 작으면 */
+    .skill--container {
+        display: none;
+    }
 }
